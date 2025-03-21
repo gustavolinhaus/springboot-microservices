@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: employee-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/employee_db
+    username: ${ENV_MYSQL_ROOT_USERNAME:root}
+    password: ${ENV_MYSQL_ROOT_PASSWORD:Mysql@123}
+
+server:
+  port: 8081
